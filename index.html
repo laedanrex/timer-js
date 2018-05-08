@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+
+
+<br />
+<svg width="300" height="300" class="timer-circle-body">
+    <circle cx="150" cy="150" r="100" stroke="#ddd" fill="none" stroke-width="24"></circle>
+    <path id="timer-circle-path" stroke-linecap="round" stroke="#666" stroke-width="24" fill="none" d="M 151 50 A 100 100 0 0 0 150 50"></path>
+</svg>
+
+<br />
+
+
+<input class="timer-input" id="timer-start-hours" type="number" min="0" title="hours">
+<input class="timer-input" id="timer-start-minutes" type="number" min="0" title="minutes">
+<input class="timer-input" id="timer-start-seconds" type="number" min="0" title="seconds">
+<button id="timer-start-button">START</button>
+<button id="timer-pause-button">PAUSE</button>
+<button id="timer-reset-button">RESET</button>
+<br />
+<p class="debug-target-time">
+
+</p>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="Clock.js" type="text/javascript"></script>
+<script src="timer.js" type="text/javascript"></script>
+</html>
